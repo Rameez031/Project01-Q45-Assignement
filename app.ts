@@ -77,3 +77,9 @@ for (let i = 0; i < cars.length; i++) {
 }
 
 //Q14
+let dinner_guest = ["Brenden Erich", "Sam Altmen", "Elbert ainstien"];
+for (let i = 0; i < dinner_guest.length; i++) {
+    console.log(`ASSALAM O ALAIKUM ${dinner_guest[i]}, you are invited to join me for dinner. It would be an honor to have your company.`);
+}
+
+//Q15
