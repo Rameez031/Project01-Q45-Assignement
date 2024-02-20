@@ -65,7 +65,7 @@ for (var i = 0; i < cars.length; i++) {
     console.log("I would like to own a ::".concat(cars[i], ":: Car"));
 }
 //Q14
-var dinner_guest = ["BillGates", "Sam Altmen", "Elbert ainstien"];
+var dinner_guest = ["Brenden Erich", "Sam Altmen", "Elbert ainstien"];
 for (var i = 0; i < dinner_guest.length; i++) {
     console.log("ASSALAM O ALAIKUM ".concat(dinner_guest[i], ", you are invited to join me for dinner. It would be an honor to have your company."));
 }
