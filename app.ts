@@ -99,26 +99,52 @@ for (let i = 0; i < dinner_guest.length; i++) {
 }
 
 // Q16
-// dinner_guest = ["Brenden Erich", "Sam Altmen", "Elbert ainstien", "BillGates",];
-// for (let i = 0; i < dinner_guest.length; i++) {
-//     console.log(`Dear ${dinner_guest[i]}, I would like to invite you to dinner`)
-// }
-// let a = Math.round(Math.random() * (dinner_guest.length - 1))
-// console.log(`${dinner_guest[a]} can't make it`)
-// dinner_guest.splice(a, a, "Rehmat")
-// console.log(`Dear ${dinner_guest[a]}, I would like to invite you to dinner`)
-// console.log("I have found bigger table")
-// dinner_guest.unshift("Amir")
-// dinner_guest.splice(3, 0, "Baber")
-// dinner_guest.push("Abdullah")
-// console.log(dinner_guest)
-// for (let i = 0; i < dinner_guest.length; i++) {
-//     console.log(`Dear ${dinner_guest[i]}, I would like to invite you to dinner`)
-// }
-
 console.log(`${dinner_guest}:\n I have found bigger dinner table than i think to invite three more freinds`);
 
 //adding three more freinds 
 //at beginning;
-dinner_guest.unshift("\n \t Elon Musk");
-console.log(dinner_guest.toString());
+dinner_guest.unshift("Ameen Alam");
+
+//at Middle;
+dinner_guest.splice(2, 0, "Guido van Rossum");
+
+//at Last
+dinner_guest.push("Adem freemen");
+
+//Print all Guest alongwith message.       
+for (let i = 0; i < dinner_guest.length; i++) {
+    console.log(`Mr ${dinner_guest[i]} you are invited to my dinner`);
+}
+
+//Q17
+
+console.log(`\n Table is not available I can invite only Two Persons\n`);
+console.log(dinner_guest.length);
+
+while (dinner_guest.length > 2) {
+    let rm_guest = dinner_guest.pop();
+    if (rm_guest) {
+        console.log(`Sorry Mr ${rm_guest} We have not enough Space, So you are not Invited Yet!\n`);
+    }
+}
+console.log(`The final two guests are:\t${dinner_guest}\n`);
+for (let i = 0; i < dinner_guest.length; i++) {
+    console.log(`Dear ${dinner_guest[i]}  you are still in our List! \n`);
+}
+dinner_guest.pop()
+dinner_guest.pop()
+console.log(` we have 0 guests in list : ${dinner_guest}`);
+
+//Q18
+let fav_Place = ["soudia", "Iran", "Turkey", "Malysia", "Iraq"];
+console.log(fav_Place);
+
+let sorted_place = fav_Place.slice();
+sorted_place.sort();
+
+console.log(`Original Guests:  ${fav_Place}`);
+console.log(`Sorted Guests: ${sorted_place}`);
+
+
+
+
