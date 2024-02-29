@@ -136,15 +136,45 @@ dinner_guest.pop()
 console.log(` we have 0 guests in list : ${dinner_guest}`);
 
 //Q18
-let fav_Place = ["soudia", "Iran", "Turkey", "Malysia", "Iraq"];
+let fav_Place = ["soudia", "Malysia", "Iran", "Turkey", "America"];
 console.log(fav_Place);
 
 let sorted_place = fav_Place.slice();
 sorted_place.sort();
 
-console.log(`Original Guests:  ${fav_Place}`);
-console.log(`Sorted Guests: ${sorted_place}`);
+console.log(`Original Places:  ${fav_Place}`);
+console.log(`Sorted Places: ${sorted_place}`);
 
+console.log(`still in its original order:\n ${fav_Place}`);
+let revFavPlace = fav_Place.slice();
+revFavPlace.reverse();
+console.log(`Original places: \n ${fav_Place}`);
+console.log(`Reverse Favourit Places:\n ${revFavPlace}`);
 
+fav_Place.reverse();
+console.log(`reverse: ${fav_Place}`);
 
+fav_Place.sort();
+console.log(`sorted: ${fav_Place}`);
+
+fav_Place.reverse();
+console.log(`reverse: ${fav_Place}`);
+
+//Q19
+dinner_guest = ["Brenden Erich", "Sam Altmen", "Elbert ainstien", "BillGates"];
+console.log(`Hey! Dear Mr ${dinner_guest} you are invited again😌`);
+
+//Q20
+let prog_language = ["Python", "JavaScript", "Java", "ReactNative", "Next.js"];
+console.log(`List of Programming Languages:\n ${prog_language}`);
+
+//Q21
+let carsObjects: { brand: string; year: number; }[] = [
+    { brand: "tesla", year: 2022 },
+    { brand: "Supra", year: 2019 },
+    { brand: "Audi", year: 2023 },
+    { brand: "Porche", year: 2018 }
+];
+
+console.log(`Car Objects: ${carsObjects}`);
 

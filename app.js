@@ -107,9 +107,14 @@ dinner_guest.pop();
 dinner_guest.pop();
 console.log(" we have 0 guests in list : ".concat(dinner_guest));
 //Q18
-var fav_Place = ["soudia", "Iran", "Turkey", "Malysia", "Iraq"];
+var fav_Place = ["soudia", "Malysia", "Iran", "Turkey", "America"];
 console.log(fav_Place);
 var sorted_place = fav_Place.slice();
 sorted_place.sort();
-console.log("Original Guests:  ".concat(fav_Place));
-console.log("Sorted Guests: ".concat(sorted_place));
+console.log("Original Places:  ".concat(fav_Place));
+console.log("Sorted Places: ".concat(sorted_place));
+console.log("still in its original order:\n ".concat(fav_Place));
+var revFavPlace = fav_Place.slice();
+revFavPlace.reverse();
+console.log("Original places: \n ".concat(fav_Place));
+console.log("Reverse Favourit Places:\n ".concat(revFavPlace));
