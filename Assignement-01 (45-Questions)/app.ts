@@ -185,4 +185,67 @@ if (object_Lang.length > 3) {
 }
 
 // Question 23
+//Comparison Operator
+let car = 'subaru'
+console.log("Is car == 'subaru'? I predict True.");
+console.log(car == 'subaru');
 
+console.log("Is car == 'kawasaki'? I predict False.");
+console.log(car == 'kawasaki');
+
+console.log("Is five grater than 4? I predict True.");
+console.log(5 > 4);
+
+console.log("Is 10 less than 20? I predict True.");
+console.log(10 < 20);
+
+console.log("Is mango start with n? I predict False.");
+console.log("mango".startsWith("n"));
+
+console.log("Is mango end with o? I predict True.");
+console.log("mango".endsWith("o"));
+
+console.log("Is mango contain t? I predict False.");
+console.log("mango".includes("t"));
+
+console.log("Is true && false? I predict False.");
+console.log(true && false);
+
+console.log("Is true || false? I predict True.");
+console.log(true || false);
+
+console.log("Is false ? I predict False.");
+console.log(false);
+
+// Question 24
+let fruit_king: string = "Mango"
+console.log("Is Apple is king of fruit? I predict False.");
+console.log("Apple" == fruit_king);
+
+console.log("Is Mango is king of fruit? I predict True.");
+console.log("Mango" == fruit_king);
+
+let my_name: string = "Rameez"
+console.log("Is rameeez is my name in lowercase? I predict True.");
+console.log(my_name.toLowerCase() == "rameez");
+
+console.log("Is Rameez is my name in lowercase? I predict False.");
+console.log(my_name.toLowerCase() == "Rameez");
+
+console.log("is Six greater than two? I predict True.")
+console.log(6 > 2)
+
+console.log("is Six lesser than two? I predict False.")
+console.log(6 < 2)
+
+console.log("is Six divisible by two? I predict True.")
+console.log(6 % 2 == 0)
+
+console.log("is seven is divisible by two? I predict False.")
+console.log(7 % 2 == 0)
+
+console.log("is israel is State? i predict False.")
+console.log(true && false)
+
+console.log("is Palestine is State? i predict True.")
+console.log(true || false)

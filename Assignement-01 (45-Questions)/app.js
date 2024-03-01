@@ -1,7 +1,7 @@
-//Q2
+//Question 2
 var msg = "Hello Yamman, would you like to learn some Python today?!";
 console.log(msg);
-//Q3
+//Question 3
 var perName = "Yamman sheikh";
 //Convert to lowercase::
 var lowercaseName = perName.toLowerCase();
@@ -12,17 +12,17 @@ console.log("UPPERCASE: ", uppercaseName);
 // Convert to title::
 var titlecaseName = perName.replace(/\w\S*/g, function (txt) { return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(); });
 console.log("TitleCase: ", titlecaseName);
-// Q4
+// Question 4
 var famQoute = "Billgates once said,'If You Are Born Poor It’s Not Your Mistake, But If You Die Poor It’s Your Mistake'";
 console.log(famQoute);
-// Q5
+// Question 5
 var famous_person = "BillGates once said!";
 var famous_qoute = "'If You Are Born Poor It’s Not Your Mistake, But If You Die Poor It’s Your Mistake'";
 console.log(famous_person + famous_qoute);
-// Q6
+// Question 6
 var nam = "\t \n Rameez \t \n";
 console.log(nam);
-// Q7
+// Question 7
 // Add
 var addNum = 3 + 5;
 console.log("Addition:\t" + addNum);
@@ -35,19 +35,19 @@ console.log("Multiply\t" + multiNum);
 // Divide
 var divNum = 32 / 4;
 console.log("Divsion:\t" + divNum);
-// Q8
+// Question 8
 // console.log(7 + 1);
 // console.log(18 - 10);
 // console.log(4 * 2);
 // console.log(40 / 5);
-// Q9
+// Question 9
 var favNum = 5;
 var myMsg = "My favourite num is";
 console.log(myMsg + " " + favNum);
-// Q10
+// Question 10
 /*Rameez Ramzy ---- Date 19/Feb/2024
 i am Learning Typescript using node.js and my programm going to be well.*/
-// Q11
+// Question 11
 var freindsName = ["Rabbi", "Yamman", "Taswwor"];
 console.log(freindsName[0]);
 console.log(freindsName[1]);
@@ -55,21 +55,21 @@ console.log(freindsName[2]);
 for (var i = 0; i < freindsName.length; i++) {
     console.log("Freind " + (i + 1) + ": " + freindsName[i]);
 }
-// Q12
+// Question 12
 for (var i = 0; i < freindsName.length; i++) {
     console.log("ASSALAM O ALAIKUM ".concat(freindsName[i], "! Have a Great day"));
 }
-// Q13
+// Question 13
 var cars = ["Supra Mk4", "vigo", "porshe", "Rolce Royce"];
 for (var i = 0; i < cars.length; i++) {
     console.log("I would like to own a ::".concat(cars[i], ":: Car"));
 }
-// Q14
+// Question 14
 var dinner_guest = ["Brenden Erich", "Sam Altmen", "Elbert ainstien", "BillGates"];
 for (var i = 0; i < dinner_guest.length; i++) {
     console.log("ASSALAM O ALAIKUM Mr. ".concat(dinner_guest[i], ", you are invited to join me for dinner. It would be an honor to have your company.\n"));
 }
-// Q15
+// Question 15
 dinner_guest = ["Brenden Erich", "Sam Altmen", "Elbert ainstien", "BillGates",];
 console.log("Due to some personal reasons Mr.".concat(dinner_guest[2], " will not come in my dinner "));
 dinner_guest[2] = "Elon Musk";
@@ -77,7 +77,7 @@ console.log("New list of my Freinds who are coming to my dinner\n");
 for (var i = 0; i < dinner_guest.length; i++) {
     console.log("".concat(i + 1, ". ").concat(dinner_guest[i]));
 }
-// Q16
+// Question 16
 console.log("".concat(dinner_guest, ":\n I have found bigger dinner table than i think to invite three more freinds"));
 //adding three more freinds 
 //at beginning;
@@ -90,7 +90,7 @@ dinner_guest.push("Adem freemen");
 for (var i = 0; i < dinner_guest.length; i++) {
     console.log("Mr ".concat(dinner_guest[i], " you are invited to my dinner"));
 }
-//Q17
+// Question 17
 console.log("\n Table is not available I can invite only Two Persons\n");
 console.log(dinner_guest.length);
 while (dinner_guest.length > 2) {
@@ -106,7 +106,7 @@ for (var i = 0; i < dinner_guest.length; i++) {
 dinner_guest.pop();
 dinner_guest.pop();
 console.log(" we have 0 guests in list : ".concat(dinner_guest));
-//Q18
+//Question 18
 var fav_Place = ["soudia", "Malysia", "Iran", "Turkey", "America"];
 console.log(fav_Place);
 var sorted_place = fav_Place.slice();
@@ -124,13 +124,13 @@ fav_Place.sort();
 console.log("sorted: ".concat(fav_Place));
 fav_Place.reverse();
 console.log("reverse: ".concat(fav_Place));
-//Q19
+// Question 19
 dinner_guest = ["Brenden Erich", "Sam Altmen", "Elbert ainstien", "BillGates"];
 console.log("Hey! Dear Mr ".concat(dinner_guest, " you are invited again\uD83D\uDE0C"));
-//Q20
+// Question 20
 var prog_language = ["Python", "JavaScript", "Java", "ReactNative", "Next.js"];
 console.log("List of Programming Languages:\n ".concat(prog_language));
-//Q21
+// Question 21 and 22
 var object_Lang = [
     { Language: "Python", year: 1991 },
     { Language: "JavaScript", year: 1995 },
@@ -145,3 +145,26 @@ if (object_Lang.length > 3) {
 else {
     console.log("Invalid index access. The array lenght is:", object_Lang.length);
 }
+// Question 23
+//Comparison Operator
+var car = 'subaru';
+console.log("Is car == 'subaru'? I predict True.");
+console.log(car == 'subaru');
+console.log("Is car == 'kawasaki'? I predict False.");
+console.log(car == 'kawasaki');
+console.log("Is five grater than 4? I predict True.");
+console.log(5 > 4);
+console.log("Is 10 less than 20? I predict True.");
+console.log(10 < 20);
+console.log("Is mango start with n? I predict False.");
+console.log("mango".startsWith("n"));
+console.log("Is mango end with o? I predict True.");
+console.log("mango".endsWith("o"));
+console.log("Is mango contain t? I predict False.");
+console.log("mango".includes("t"));
+console.log("Is true && false? I predict False.");
+console.log(true && false);
+console.log("Is true || false? I predict True.");
+console.log(true || false);
+console.log("Is false ? I predict False.");
+console.log(false);
