@@ -169,12 +169,19 @@ let prog_language = ["Python", "JavaScript", "Java", "ReactNative", "Next.js"];
 console.log(`List of Programming Languages:\n ${prog_language}`);
 
 //Q21
-let carsObjects: { brand: string; year: number; }[] = [
-    { brand: "tesla", year: 2022 },
-    { brand: "Supra", year: 2019 },
-    { brand: "Audi", year: 2023 },
-    { brand: "Porche", year: 2018 }
+let object_Lang: { Language: string; year: number; }[] = [
+    { Language: "Python", year: 1991 },
+    { Language: "JavaScript", year: 1995 },
+    { Language: "Java", year: 1991 },
+    { Language: "C++", year: 1979 }
 ];
 
-console.log(`Car Objects: ${carsObjects}`);
+let invalid_index = object_Lang[3];
+if (object_Lang.length > 3) {
+    let valid_index = object_Lang[3];
+    console.log("language at index 3: ", valid_index);
+} else {
+    console.log("Invalid index access. The array lenght is:", object_Lang.length);
+}
+
 
