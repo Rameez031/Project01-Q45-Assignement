@@ -1,8 +1,8 @@
-//Q2
+//Question 2
 let msg = "Hello Yamman, would you like to learn some Python today?!";
 console.log(msg);
 
-//Q3
+//Question 3
 let perName = "Yamman sheikh";
 
 //Convert to lowercase::
@@ -17,20 +17,20 @@ console.log("UPPERCASE: ", uppercaseName);
 let titlecaseName = perName.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
 console.log("TitleCase: ", titlecaseName);
 
-// Q4
+// Question 4
 let famQoute = "Billgates once said,'If You Are Born Poor It’s Not Your Mistake, But If You Die Poor It’s Your Mistake'"
 console.log(famQoute);
 
-// Q5
+// Question 5
 let famous_person = "BillGates once said!";
 let famous_qoute = "'If You Are Born Poor It’s Not Your Mistake, But If You Die Poor It’s Your Mistake'"
 console.log(famous_person + famous_qoute);
 
-// Q6
+// Question 6
 let nam = "\t \n Rameez \t \n";
 console.log(nam);
 
-// Q7
+// Question 7
 // Add
 let addNum = 3 + 5;
 console.log("Addition:\t" + addNum);
@@ -47,22 +47,22 @@ console.log("Multiply\t" + multiNum);
 let divNum = 32 / 4;
 console.log("Divsion:\t" + divNum);
 
-// Q8
+// Question 8
 // console.log(7 + 1);
 // console.log(18 - 10);
 // console.log(4 * 2);
 // console.log(40 / 5);
 
-// Q9
+// Question 9
 let favNum = 5;
 let myMsg = "My favourite num is";
 console.log(myMsg + " " + favNum);
 
-// Q10
+// Question 10
 /*Rameez Ramzy ---- Date 19/Feb/2024
 i am Learning Typescript using node.js and my programm going to be well.*/
 
-// Q11
+// Question 11
 let freindsName = ["Rabbi", "Yamman", "Taswwor"];
 console.log(freindsName[0]);
 console.log(freindsName[1]);
@@ -71,24 +71,24 @@ for (let i = 0; i < freindsName.length; i++) {
     console.log("Freind " + (i + 1) + ": " + freindsName[i])
 }
 
-// Q12
+// Question 12
 for (let i = 0; i < freindsName.length; i++) {
     console.log(`ASSALAM O ALAIKUM ${freindsName[i]}! Have a Great day`)
 }
 
-// Q13
+// Question 13
 let cars = ["Supra Mk4", "vigo", "porshe", "Rolce Royce"];
 for (let i = 0; i < cars.length; i++) {
     console.log(`I would like to own a ::${cars[i]}:: Car`);
 }
 
-// Q14
+// Question 14
 let dinner_guest = ["Brenden Erich", "Sam Altmen", "Elbert ainstien", "BillGates"];
 for (let i = 0; i < dinner_guest.length; i++) {
     console.log(`ASSALAM O ALAIKUM Mr. ${dinner_guest[i]}, you are invited to join me for dinner. It would be an honor to have your company.\n`);
 }
 
-// Q15
+// Question 15
 dinner_guest = ["Brenden Erich", "Sam Altmen", "Elbert ainstien", "BillGates",];
 console.log(`Due to some personal reasons Mr.${dinner_guest[2]} will not come in my dinner `);
 dinner_guest[2] = "Elon Musk";
@@ -98,7 +98,7 @@ for (let i = 0; i < dinner_guest.length; i++) {
     console.log(`${i + 1}. ${dinner_guest[i]}`);
 }
 
-// Q16
+// Question 16
 console.log(`${dinner_guest}:\n I have found bigger dinner table than i think to invite three more freinds`);
 
 //adding three more freinds 
@@ -116,7 +116,7 @@ for (let i = 0; i < dinner_guest.length; i++) {
     console.log(`Mr ${dinner_guest[i]} you are invited to my dinner`);
 }
 
-//Q17
+// Question 17
 
 console.log(`\n Table is not available I can invite only Two Persons\n`);
 console.log(dinner_guest.length);
@@ -135,7 +135,7 @@ dinner_guest.pop()
 dinner_guest.pop()
 console.log(` we have 0 guests in list : ${dinner_guest}`);
 
-//Q18
+//Question 18
 let fav_Place = ["soudia", "Malysia", "Iran", "Turkey", "America"];
 console.log(fav_Place);
 
@@ -144,10 +144,11 @@ sorted_place.sort();
 
 console.log(`Original Places:  ${fav_Place}`);
 console.log(`Sorted Places: ${sorted_place}`);
-
 console.log(`still in its original order:\n ${fav_Place}`);
+
 let revFavPlace = fav_Place.slice();
 revFavPlace.reverse();
+
 console.log(`Original places: \n ${fav_Place}`);
 console.log(`Reverse Favourit Places:\n ${revFavPlace}`);
 
@@ -160,22 +161,21 @@ console.log(`sorted: ${fav_Place}`);
 fav_Place.reverse();
 console.log(`reverse: ${fav_Place}`);
 
-//Q19
+// Question 19
 dinner_guest = ["Brenden Erich", "Sam Altmen", "Elbert ainstien", "BillGates"];
 console.log(`Hey! Dear Mr ${dinner_guest} you are invited again😌`);
 
-//Q20
+// Question 20
 let prog_language = ["Python", "JavaScript", "Java", "ReactNative", "Next.js"];
 console.log(`List of Programming Languages:\n ${prog_language}`);
 
-//Q21
+// Question 21 and 22
 let object_Lang: { Language: string; year: number; }[] = [
     { Language: "Python", year: 1991 },
     { Language: "JavaScript", year: 1995 },
     { Language: "Java", year: 1991 },
     { Language: "C++", year: 1979 }
 ];
-
 let invalid_index = object_Lang[3];
 if (object_Lang.length > 3) {
     let valid_index = object_Lang[3];
@@ -184,4 +184,5 @@ if (object_Lang.length > 3) {
     console.log("Invalid index access. The array lenght is:", object_Lang.length);
 }
 
+// Question 23
 
