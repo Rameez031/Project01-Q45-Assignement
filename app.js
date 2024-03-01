@@ -118,3 +118,30 @@ var revFavPlace = fav_Place.slice();
 revFavPlace.reverse();
 console.log("Original places: \n ".concat(fav_Place));
 console.log("Reverse Favourit Places:\n ".concat(revFavPlace));
+fav_Place.reverse();
+console.log("reverse: ".concat(fav_Place));
+fav_Place.sort();
+console.log("sorted: ".concat(fav_Place));
+fav_Place.reverse();
+console.log("reverse: ".concat(fav_Place));
+//Q19
+dinner_guest = ["Brenden Erich", "Sam Altmen", "Elbert ainstien", "BillGates"];
+console.log("Hey! Dear Mr ".concat(dinner_guest, " you are invited again\uD83D\uDE0C"));
+//Q20
+var prog_language = ["Python", "JavaScript", "Java", "ReactNative", "Next.js"];
+console.log("List of Programming Languages:\n ".concat(prog_language));
+//Q21
+var object_Lang = [
+    { Language: "Python", year: 1991 },
+    { Language: "JavaScript", year: 1995 },
+    { Language: "Java", year: 1991 },
+    { Language: "C++", year: 1979 }
+];
+var invalid_index = object_Lang[3];
+if (object_Lang.length > 3) {
+    var valid_index = object_Lang[3];
+    console.log("language at index 3: ", valid_index);
+}
+else {
+    console.log("Invalid index access. The array lenght is:", object_Lang.length);
+}
