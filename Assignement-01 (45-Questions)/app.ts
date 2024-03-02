@@ -249,3 +249,38 @@ console.log(true && false)
 
 console.log("is Palestine is State? i predict True.")
 console.log(true || false)
+
+let fruits: string[] = ["Apple", "Mango", "Orange", "Banana"]
+console.log("Is Apple in fruits? I predict True.")
+console.log(fruits.includes("Apple"))
+
+console.log("Is Car in fruits? I predict False.")
+console.log(fruits.includes("Car"))
+
+// Question 25
+let alien_color = ['green', 'yellow', 'red'][Math.floor(Math.random() * 3)] as 'green' | 'yellow' | 'red';
+
+if (alien_color === "green") {
+    console.log("Congratulations! The player just earned 5 points for shooting down the green alien.");
+}
+
+// Question 26
+alien_color = ['green', 'yellow', 'red'][Math.floor(Math.random() * 3)] as 'green' | 'yellow' | 'red';
+if (alien_color === 'green') {
+    console.log("Congratulations! The player just earned 5 points for shooting down the green alien.");
+}
+else if (alien_color === 'yellow') {
+    console.log("Congratulations! The player just earned 10 points for shooting down the yellow alien.");
+}
+
+// Question 27
+alien_color = ['green', 'yellow', 'red'][Math.floor(Math.random() * 3)] as 'green' | 'yellow' | 'red';
+if (alien_color === 'green') {
+    console.log("Congratulations! The player just earned 5 points for shooting down the green alien.");
+}
+else if (alien_color === 'yellow') {
+    console.log("Congratulations! The player just earned 10 points for shooting down the yellow alien.");
+}
+else if (alien_color === 'red') {
+    console.log('Congratulations! The player just earned 15 points for shooting down the red alien.');
+}
