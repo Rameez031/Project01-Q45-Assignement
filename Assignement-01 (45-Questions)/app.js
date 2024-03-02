@@ -168,3 +168,55 @@ console.log("Is true || false? I predict True.");
 console.log(true || false);
 console.log("Is false ? I predict False.");
 console.log(false);
+// Question 24
+var fruit_king = "Mango";
+console.log("Is Apple is king of fruit? I predict False.");
+console.log("Apple" == fruit_king);
+console.log("Is Mango is king of fruit? I predict True.");
+console.log("Mango" == fruit_king);
+var my_name = "Rameez";
+console.log("Is rameeez is my name in lowercase? I predict True.");
+console.log(my_name.toLowerCase() == "rameez");
+console.log("Is Rameez is my name in lowercase? I predict False.");
+console.log(my_name.toLowerCase() == "Rameez");
+console.log("is Six greater than two? I predict True.");
+console.log(6 > 2);
+console.log("is Six lesser than two? I predict False.");
+console.log(6 < 2);
+console.log("is Six divisible by two? I predict True.");
+console.log(6 % 2 == 0);
+console.log("is seven is divisible by two? I predict False.");
+console.log(7 % 2 == 0);
+console.log("is israel is State? i predict False.");
+console.log(true && false);
+console.log("is Palestine is State? i predict True.");
+console.log(true || false);
+var fruits = ["Apple", "Mango", "Orange", "Banana"];
+console.log("Is Apple in fruits? I predict True.");
+console.log(fruits.includes("Apple"));
+console.log("Is Car in fruits? I predict False.");
+console.log(fruits.includes("Car"));
+// Question 25
+var alien_color = ['green', 'yellow', 'red'][Math.floor(Math.random() * 3)];
+if (alien_color === "green") {
+    console.log("Congratulations! The player just earned 5 points for shooting down the green alien.");
+}
+// Question 26
+alien_color = ['green', 'yellow', 'red'][Math.floor(Math.random() * 3)];
+if (alien_color === 'green') {
+    console.log("Congratulations! The player just earned 5 points for shooting down the green alien.");
+}
+else if (alien_color === 'yellow') {
+    console.log("Congratulations! The player just earned 10 points for shooting down the yellow alien.");
+}
+// Question 27
+alien_color = ['green', 'yellow', 'red'][Math.floor(Math.random() * 3)];
+if (alien_color === 'green') {
+    console.log("Congratulations! The player just earned 5 points for shooting down the green alien.");
+}
+else if (alien_color === 'yellow') {
+    console.log("Congratulations! The player just earned 10 points for shooting down the yellow alien.");
+}
+else if (alien_color === 'red') {
+    console.log('Congratulations! The player just earned 15 points for shooting down the red alien.');
+}
