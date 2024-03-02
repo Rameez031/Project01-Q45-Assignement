@@ -1,50 +1,50 @@
 //Question 2
-let msg = "Hello Yamman, would you like to learn some Python today?!";
+let msg: string = "Hello Yamman, would you like to learn some Python today?!";
 console.log(msg);
 
 //Question 3
-let perName = "Yamman sheikh";
+let perName: string = "Yamman sheikh";
 
 //Convert to lowercase::
-let lowercaseName = perName.toLowerCase();
+let lowercaseName: string = perName.toLowerCase();
 console.log("Lowercase: ", lowercaseName);
 
 //Convert to Uppercase::
-let uppercaseName = perName.toUpperCase();
+let uppercaseName: string = perName.toUpperCase();
 console.log("UPPERCASE: ", uppercaseName);
 
 // Convert to title::
-let titlecaseName = perName.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
+let titlecaseName: string = perName.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
 console.log("TitleCase: ", titlecaseName);
 
 // Question 4
-let famQoute = "Billgates once said,'If You Are Born Poor It’s Not Your Mistake, But If You Die Poor It’s Your Mistake'"
+let famQoute: string = "Billgates once said,'If You Are Born Poor It’s Not Your Mistake, But If You Die Poor It’s Your Mistake'"
 console.log(famQoute);
 
 // Question 5
-let famous_person = "BillGates once said!";
-let famous_qoute = "'If You Are Born Poor It’s Not Your Mistake, But If You Die Poor It’s Your Mistake'"
+let famous_person: string = "BillGates once said!";
+let famous_qoute: string = "'If You Are Born Poor It’s Not Your Mistake, But If You Die Poor It’s Your Mistake'"
 console.log(famous_person + famous_qoute);
 
 // Question 6
-let nam = "\t \n Rameez \t \n";
+let nam: string = "\t \n Rameez \t \n";
 console.log(nam);
 
 // Question 7
 // Add
-let addNum = 3 + 5;
+let addNum: Number = 3 + 5;
 console.log("Addition:\t" + addNum);
 
 // Sub
-let subNum = 14 - 6;
+let subNum: Number = 14 - 6;
 console.log("substraction:\t" + subNum);
 
 // Multi
-let multiNum = 2 * 4;
+let multiNum: Number = 2 * 4;
 console.log("Multiply\t" + multiNum);
 
 // Divide
-let divNum = 32 / 4;
+let divNum: Number = 32 / 4;
 console.log("Divsion:\t" + divNum);
 
 // Question 8
@@ -54,8 +54,8 @@ console.log("Divsion:\t" + divNum);
 // console.log(40 / 5);
 
 // Question 9
-let favNum = 5;
-let myMsg = "My favourite num is";
+let favNum: Number = 5;
+let myMsg: String = "My favourite num is";
 console.log(myMsg + " " + favNum);
 
 // Question 10
@@ -63,12 +63,12 @@ console.log(myMsg + " " + favNum);
 i am Learning Typescript using node.js and my programm going to be well.*/
 
 // Question 11
-let freindsName = ["Rabbi", "Yamman", "Taswwor"];
+let freindsName: string[] = ["Rabbi", "Yamman", "Taswwor"];
 console.log(freindsName[0]);
 console.log(freindsName[1]);
 console.log(freindsName[2]);
 for (let i = 0; i < freindsName.length; i++) {
-    console.log("Freind " + (i + 1) + ": " + freindsName[i])
+    console.log("Freind " + (i + 1) + ": " + freindsName[i]);
 }
 
 // Question 12
@@ -77,13 +77,13 @@ for (let i = 0; i < freindsName.length; i++) {
 }
 
 // Question 13
-let cars = ["Supra Mk4", "vigo", "porshe", "Rolce Royce"];
+let cars: string[] = ["Supra Mk4", "vigo", "porshe", "Rolce Royce"];
 for (let i = 0; i < cars.length; i++) {
     console.log(`I would like to own a ::${cars[i]}:: Car`);
 }
 
 // Question 14
-let dinner_guest = ["Brenden Erich", "Sam Altmen", "Elbert ainstien", "BillGates"];
+let dinner_guest: string[] = ["Brenden Erich", "Sam Altmen", "Elbert ainstien", "BillGates"];
 for (let i = 0; i < dinner_guest.length; i++) {
     console.log(`ASSALAM O ALAIKUM Mr. ${dinner_guest[i]}, you are invited to join me for dinner. It would be an honor to have your company.\n`);
 }
@@ -136,7 +136,7 @@ dinner_guest.pop()
 console.log(` we have 0 guests in list : ${dinner_guest}`);
 
 //Question 18
-let fav_Place = ["soudia", "Malysia", "Iran", "Turkey", "America"];
+let fav_Place: string[] = ["soudia", "Malysia", "Iran", "Turkey", "America"];
 console.log(fav_Place);
 
 let sorted_place = fav_Place.slice();
@@ -166,7 +166,7 @@ dinner_guest = ["Brenden Erich", "Sam Altmen", "Elbert ainstien", "BillGates"];
 console.log(`Hey! Dear Mr ${dinner_guest} you are invited again😌`);
 
 // Question 20
-let prog_language = ["Python", "JavaScript", "Java", "ReactNative", "Next.js"];
+let prog_language: string[] = ["Python", "JavaScript", "Java", "ReactNative", "Next.js"];
 console.log(`List of Programming Languages:\n ${prog_language}`);
 
 // Question 21 and 22
@@ -186,7 +186,7 @@ if (object_Lang.length > 3) {
 
 // Question 23
 //Comparison Operator
-let car = 'subaru'
+let car: string = 'subaru'
 console.log("Is car == 'subaru'? I predict True.");
 console.log(car == 'subaru');
 
@@ -226,7 +226,7 @@ console.log("Is Mango is king of fruit? I predict True.");
 console.log("Mango" == fruit_king);
 
 let my_name: string = "Rameez"
-console.log("Is rameeez is my name in lowercase? I predict True.");
+console.log("Is rameez is my name in lowercase? I predict True.");
 console.log(my_name.toLowerCase() == "rameez");
 
 console.log("Is Rameez is my name in lowercase? I predict False.");
@@ -283,4 +283,50 @@ else if (alien_color === 'yellow') {
 }
 else if (alien_color === 'red') {
     console.log('Congratulations! The player just earned 15 points for shooting down the red alien.');
+}
+
+// Question 28
+let age: number = 10
+if (age <= 2) {
+    console.log("the person is a baby")
+}
+else if (age > 2 && age <= 4) {
+    console.log("the person is a toddler")
+}
+else if (age > 4 && age <= 13) {
+    console.log("the person is a kid")
+}
+else if (age > 13 && age <= 20) {
+    console.log("the person is a teenager")
+}
+else if (age > 20 && age <= 65) {
+    console.log("the person is an adult")
+}
+else if (age > 65) {
+    console.log("the person is an elder")
+}
+
+// Question 29
+let fav_fruits: string[] = ["Pineapple", "Guava", "Mango"];
+
+if (fav_fruits.includes("Pineapple")) {
+    console.log("You Really Like Pineapple!");
+}
+if (fav_fruits.includes("Mango")) {
+    console.log("You Really Like Mango!");
+}
+if (fav_fruits.includes("Guava")) {
+    console.log("You Really Like Guava!");
+}
+if (fav_fruits.includes('Bananas')) {
+    console.log("You really like Bananas!");
+}
+else {
+    console.log("Bananas is not one of your favorite fruits.");
+}
+if (fav_fruits.includes('kiwi')) {
+    console.log("You really like kiwi!");
+}
+else {
+    console.log("Kiwi is not one of your favorite fruits.");
 }

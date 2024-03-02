@@ -175,7 +175,7 @@ console.log("Apple" == fruit_king);
 console.log("Is Mango is king of fruit? I predict True.");
 console.log("Mango" == fruit_king);
 var my_name = "Rameez";
-console.log("Is rameeez is my name in lowercase? I predict True.");
+console.log("Is rameez is my name in lowercase? I predict True.");
 console.log(my_name.toLowerCase() == "rameez");
 console.log("Is Rameez is my name in lowercase? I predict False.");
 console.log(my_name.toLowerCase() == "Rameez");
@@ -219,4 +219,47 @@ else if (alien_color === 'yellow') {
 }
 else if (alien_color === 'red') {
     console.log('Congratulations! The player just earned 15 points for shooting down the red alien.');
+}
+// Question 28
+var age = 10;
+if (age <= 2) {
+    console.log("the person is a baby");
+}
+else if (age > 2 && age <= 4) {
+    console.log("the person is a toddler");
+}
+else if (age > 4 && age <= 13) {
+    console.log("the person is a kid");
+}
+else if (age > 13 && age <= 20) {
+    console.log("the person is a teenager");
+}
+else if (age > 20 && age <= 65) {
+    console.log("the person is an adult");
+}
+else if (age > 65) {
+    console.log("the person is an elder");
+}
+// Question 29
+var fav_fruits = ["Pineapple", "Guava", "Mango"];
+if (fav_fruits.includes("Pineapple")) {
+    console.log("You Really Like Pineapple!");
+}
+if (fav_fruits.includes("Mango")) {
+    console.log("You Really Like Mango!");
+}
+if (fav_fruits.includes("Guava")) {
+    console.log("You Really Like Guava!");
+}
+if (fav_fruits.includes('Bananas')) {
+    console.log("You really like Bananas!");
+}
+else {
+    console.log("Bananas is not one of your favorite fruits.");
+}
+if (fav_fruits.includes('kiwi')) {
+    console.log("You really like kiwi!");
+}
+else {
+    console.log("Kiwi is not one of your favorite fruits.");
 }
