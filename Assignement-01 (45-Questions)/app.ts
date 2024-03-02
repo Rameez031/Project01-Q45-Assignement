@@ -330,3 +330,15 @@ if (fav_fruits.includes('kiwi')) {
 else {
     console.log("Kiwi is not one of your favorite fruits.");
 }
+
+// Question 30
+let userNames: string[] = ['Admin', 'Rameez', 'Rabbi', 'Yamman', 'Taswwor'];
+
+for (let userName of userNames) {
+    if (userName == 'Admin') {
+        console.log('Hello admin, would you like to see a status report?');
+    }
+    else {
+        console.log(`Hello ${userName}, thank you for logging in again.`);
+    }
+}
