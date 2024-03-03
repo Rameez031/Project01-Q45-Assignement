@@ -308,3 +308,39 @@ for (var _b = 0, new_users_1 = new_users; _b < new_users_1.length; _b++) {
     var newUser = new_users_1[_b];
     _loop_1(newUser);
 }
+// Question 33
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (var i = 0; i < numbers.length; i++) {
+    var ordinal = void 0;
+    if (numbers[i] === 1) {
+        ordinal = "st";
+    }
+    else if (numbers[i] === 2) {
+        ordinal = "nd";
+    }
+    else if (numbers[i] === 3) {
+        ordinal = "rd";
+    }
+    else {
+        ordinal = "th";
+    }
+    console.log("".concat(numbers[i]).concat(ordinal));
+}
+// Question 34
+var fav_pizzas = ['Cheese Pizza', 'Pepperoni pizza', 'Afghani tikka burst pizza'];
+for (var _c = 0, fav_pizzas_1 = fav_pizzas; _c < fav_pizzas_1.length; _c++) {
+    var pizza = fav_pizzas_1[_c];
+    console.log("I like ".concat(pizza));
+}
+console.log('i really love pizza');
+// Question 35
+var petAnimal = ['Dog', 'Cat', 'Rabbit'];
+for (var i = 0; i < petAnimal.length; i++) {
+    console.log(petAnimal[i]);
+}
+for (var _d = 0, petAnimal_1 = petAnimal; _d < petAnimal_1.length; _d++) {
+    var animal = petAnimal_1[_d];
+    console.log("A ".concat(animal.toLowerCase(), " would make a great pet."));
+}
+console.log('All three animals are commonly domesticated, kept as pets in households around the world. They are known for their companionship and play a significant role in human lives as beloved pets.');
+// Question 36
