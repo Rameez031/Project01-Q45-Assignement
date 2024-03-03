@@ -342,3 +342,37 @@ for (let userName of userNames) {
         console.log(`Hello ${userName}, thank you for logging in again.`);
     }
 }
+
+// Question 31
+userNames = ['Admin', 'Rameez', 'Rabbi', 'Yamman', 'Taswwor'];
+for (let i = userNames.length; i > 0; i--) {
+    userNames.pop()
+}
+if (userNames.length > 0) {
+    for (let _names of userNames) {
+        if (_names == "Admin") {
+            console.log('Hello admin, would you like to see a status report?');
+        }
+        else {
+            console.log(`Hello ${_names}, thank you for logging in again.`);
+        }
+    }
+}
+else {
+    console.log("We need to find some users");
+}
+
+// Question 32
+let current_users: string[] = ['Ameen Alam', 'Rameez', 'Rabbi', 'Yamman', 'Taswwor'];
+let new_users: string[] = ['Taswwor', 'Eric', 'Ramzy', 'Yamman', 'Okasha-Aijaz'];
+
+for (let newUser of new_users) {
+    if (current_users.some(user => user.toLowerCase() === newUser.toLowerCase())) {
+        console.log(`The user name ${newUser} is not available. please try something new`);
+    }
+    else {
+        console.log(`The user name ${newUser} is available`);
+    }
+}
+
+// Question 33

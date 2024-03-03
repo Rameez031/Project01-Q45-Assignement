@@ -274,3 +274,37 @@ for (var _i = 0, userNames_1 = userNames; _i < userNames_1.length; _i++) {
         console.log("Hello ".concat(userName, ", thank you for logging in again."));
     }
 }
+// Question 31
+userNames = ['Admin', 'Rameez', 'Rabbi', 'Yamman', 'Taswwor'];
+for (var i = userNames.length; i > 0; i--) {
+    userNames.pop();
+}
+if (userNames.length > 0) {
+    for (var _a = 0, userNames_2 = userNames; _a < userNames_2.length; _a++) {
+        var _names = userNames_2[_a];
+        if (_names == "Admin") {
+            console.log('Hello admin, would you like to see a status report?');
+        }
+        else {
+            console.log("Hello ".concat(_names, ", thank you for logging in again."));
+        }
+    }
+}
+else {
+    console.log("We need to find some users");
+}
+// Question 32
+var current_users = ['Ameen Alam', 'Rameez', 'Rabbi', 'Yamman', 'Taswwor'];
+var new_users = ['Taswwor', 'Eric', 'Ramzy', 'Yamman', 'Okasha-Aijaz'];
+var _loop_1 = function (newUser) {
+    if (current_users.some(function (user) { return user.toLowerCase() === newUser.toLowerCase(); })) {
+        console.log("The user name ".concat(newUser, " is not available. please try something new"));
+    }
+    else {
+        console.log("The user name ".concat(newUser, " is available"));
+    }
+};
+for (var _b = 0, new_users_1 = new_users; _b < new_users_1.length; _b++) {
+    var newUser = new_users_1[_b];
+    _loop_1(newUser);
+}
