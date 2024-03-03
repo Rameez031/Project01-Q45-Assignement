@@ -394,3 +394,7 @@ console.log("Album 1:", album1);
 console.log("Album 2:", album2);
 console.log("Album 3:", album3);
 console.log("Album 4:", album4);
+// Question 41
+function make_great(magicians) {
+    return magicians.map(function (magician) { return "The Great ".concat(magician); });
+}

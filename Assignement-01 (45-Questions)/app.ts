@@ -471,3 +471,6 @@ console.log("Album 3:", album3);
 console.log("Album 4:", album4);
 
 // Question 41
+// function make_great(magicians: string[]):string[]{
+//     return magicians.map(magician => `The Great ${magician}`)
+//  }
