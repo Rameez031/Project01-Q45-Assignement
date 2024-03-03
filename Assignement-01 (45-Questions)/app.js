@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 //Question 2
 var msg = "Hello Yamman, would you like to learn some Python today?!";
 console.log(msg);
@@ -342,5 +344,53 @@ for (var _d = 0, petAnimal_1 = petAnimal; _d < petAnimal_1.length; _d++) {
     var animal = petAnimal_1[_d];
     console.log("A ".concat(animal.toLowerCase(), " would make a great pet."));
 }
-console.log('All three animals are commonly domesticated, kept as pets in households around the world. They are known for their companionship and play a significant role in human lives as beloved pets.');
+console.log('\n All three animals are commonly domesticated, kept as pets in households around the world. They are known for their companionship and play a significant role in human lives as beloved pets.');
 // Question 36
+function makeShirt(size, text) {
+    console.log("\n The shirt size is ".concat(size, " and the message on it is ").concat(text));
+}
+makeShirt('Medium', 'ASSALAM O ALAIKUM Javascript');
+// Question 37
+function make_Shirt(size, text) {
+    if (size === void 0) { size = 'Large'; }
+    if (text === void 0) { text = 'I love Typescript'; }
+    console.log("\n Make the shirt in size in ".concat(size, " and have message ").concat(text));
+}
+make_Shirt();
+make_Shirt('Medium', 'Assalam o alaikum TypeScript');
+// Question 38
+function describeCity(city, Country) {
+    if (Country === void 0) { Country = 'pakistan!'; }
+    console.log("\n The city ".concat(city, " is in ").concat(Country, " "));
+}
+describeCity('Karachi');
+describeCity('Islamabad', 'Pakistan!');
+describeCity('Istanbul', 'Turkey!');
+// Question 39
+function city_country(city, country) {
+    if (city === void 0) { city = "Karachi"; }
+    if (country === void 0) { country = "Pakistan"; }
+    console.log("\"".concat(city, ",").concat(country, "\""));
+}
+city_country();
+city_country('Malacca', 'Malaysia');
+city_country("Madina and Makkah", "Saudi Arabia");
+// Question 40
+function makeAlbum(artName, album_title, tracks) {
+    var album = {
+        artName: artName,
+        album_title: album_title
+    };
+    if (tracks !== undefined) {
+        album.tracks = tracks;
+    }
+    return album;
+}
+var album1 = makeAlbum('Artist1', 'Album1');
+var album2 = makeAlbum('Artist2', 'Album2', 17);
+var album3 = makeAlbum('Artist3', 'Album3');
+var album4 = makeAlbum('Artist4', 'Album4', 26); // Example with tracks parameter
+console.log("Album 1:", album1);
+console.log("Album 2:", album2);
+console.log("Album 3:", album3);
+console.log("Album 4:", album4);
