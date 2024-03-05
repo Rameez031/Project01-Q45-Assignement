@@ -406,7 +406,7 @@ showMagician(magicainNames);
 // Question 42
 console.log('\t \n Modify the programm by adding "the Great" to each magicians name');
 function makeGreat(magicians) {
-    return magicians.map(function (magician) { return magician + " " + "the Great"; });
+    return magicians.map(function (magician) { return magician + " " + "the Great!"; });
 }
 function show_magician(magicians) {
     for (var _i = 0, magicians_2 = magicians; _i < magicians_2.length; _i++) {
@@ -419,3 +419,26 @@ show_magician(magician_names);
 var greatMagicians = makeGreat(magician_names);
 console.log("\n Magicians after adding 'the Great':");
 show_magician(greatMagicians);
+// Question 43
+function makeGreatMagician(magicians) {
+    return magicians.map(function (magician) { return magician + " " + "the Great!"; });
+}
+function showOfMagician(magicians) {
+    for (var _i = 0, magicians_3 = magicians; _i < magicians_3.length; _i++) {
+        var magician = magicians_3[_i];
+        console.log(magician);
+    }
+}
+var magicianNames = ['\n' + 'Mahdi Moudini', 'Issy Simpson', 'Rahat Hossain', 'Ahmed El-Bayoumi'];
+showOfMagician(magician_names);
+var great_magicians = makeGreatMagician(magician_names);
+console.log("\n Magicians after adding 'the Great':");
+showOfMagician(greatMagicians);
+// Question 44
+function makeSandwich(ingredients) {
+    if (ingredients.length === 0) {
+        return 'Your sandwich is empty. Please add some ingredients!';
+    }
+    var sandwich = "Your sandwich includes: " + ingredients.join(', ');
+    return sandwich;
+}

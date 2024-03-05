@@ -499,3 +499,30 @@ console.log("\n Magicians after adding 'the Great':");
 show_magician(greatMagicians);
 
 // Question 43
+function makeGreatMagician(magicians: string[]): string[] {
+    return magicians.map(magician => magician + " " + "the Great!");
+}
+
+function showOfMagician(magicians: string[]): void {
+    for (let magician of magicians) {
+        console.log(magician);
+    }
+}
+let magicianNames: string[] = ['\n' + 'Mahdi Moudini', 'Issy Simpson', 'Rahat Hossain', 'Ahmed El-Bayoumi'];
+showOfMagician(magician_names);
+
+let great_magicians: string[] = makeGreatMagician(magician_names);
+
+console.log("\n Magicians after adding 'the Great':");
+showOfMagician(greatMagicians);
+
+// Question 44
+function makeSandwich(ingredients: string[]): string {
+    if (ingredients.length === 0) {
+        return 'Your sandwich is empty. Please add some ingredients!';
+    }
+    let sandwich = "Your sandwich includes: " + ingredients.join(', ');
+
+    return sandwich;
+
+}
