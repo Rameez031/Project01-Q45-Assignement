@@ -395,6 +395,27 @@ console.log("Album 2:", album2);
 console.log("Album 3:", album3);
 console.log("Album 4:", album4);
 // Question 41
-function make_great(magicians) {
-    return magicians.map(function (magician) { return "The Great ".concat(magician); });
+function showMagician(magicians) {
+    for (var _i = 0, magicians_1 = magicians; _i < magicians_1.length; _i++) {
+        var magician = magicians_1[_i];
+        console.log(magician);
+    }
 }
+var magicainNames = ['Mahdi Moudini', 'Issy Simpson', 'Rahat Hossain', 'Ahmed El-Bayoumi'];
+showMagician(magicainNames);
+// Question 42
+console.log('\t \n Modify the programm by adding "the Great" to each magicians name');
+function makeGreat(magicians) {
+    return magicians.map(function (magician) { return magician + " " + "the Great"; });
+}
+function show_magician(magicians) {
+    for (var _i = 0, magicians_2 = magicians; _i < magicians_2.length; _i++) {
+        var magician = magicians_2[_i];
+        console.log(magician);
+    }
+}
+var magician_names = ['\n' + 'Mahdi Moudini', 'Issy Simpson', 'Rahat Hossain', 'Ahmed El-Bayoumi'];
+show_magician(magician_names);
+var greatMagicians = makeGreat(magician_names);
+console.log("\n Magicians after adding 'the Great':");
+show_magician(greatMagicians);

@@ -471,6 +471,31 @@ console.log("Album 3:", album3);
 console.log("Album 4:", album4);
 
 // Question 41
-// function make_great(magicians: string[]):string[]{
-//     return magicians.map(magician => `The Great ${magician}`)
-//  }
+function showMagician(magicians: string[]): void {
+    for (let magician of magicians) {
+        console.log(magician);
+    }
+}
+let magicainNames: string[] = ['Mahdi Moudini', 'Issy Simpson', 'Rahat Hossain', 'Ahmed El-Bayoumi'];
+showMagician(magicainNames);
+
+// Question 42
+console.log('\t \n Modify the programm by adding "the Great" to each magicians name');
+function makeGreat(magicians: string[]): string[] {
+    return magicians.map(magician => magician + " " + "the Great!");
+}
+
+function show_magician(magicians: string[]): void {
+    for (let magician of magicians) {
+        console.log(magician);
+    }
+}
+let magician_names: string[] = ['\n' + 'Mahdi Moudini', 'Issy Simpson', 'Rahat Hossain', 'Ahmed El-Bayoumi'];
+show_magician(magician_names);
+
+let greatMagicians: string[] = makeGreat(magician_names);
+
+console.log("\n Magicians after adding 'the Great':");
+show_magician(greatMagicians);
+
+// Question 43
