@@ -430,10 +430,14 @@ function showOfMagician(magicians) {
     }
 }
 var magicianNames = ['\n' + 'Mahdi Moudini', 'Issy Simpson', 'Rahat Hossain', 'Ahmed El-Bayoumi'];
-showOfMagician(magician_names);
 var great_magicians = makeGreatMagician(magician_names);
+showOfMagician(magician_names);
 console.log("\n Magicians after adding 'the Great':");
 showOfMagician(greatMagicians);
+var unchangedArray = magicainNames.slice();
+var makeGreatUncahnged = makeGreatMagician(unchangedArray);
+showOfMagician(unchangedArray);
+showOfMagician(makeGreatUncahnged);
 // Question 44
 function makeSandwich(ingredients) {
     if (ingredients.length === 0) {

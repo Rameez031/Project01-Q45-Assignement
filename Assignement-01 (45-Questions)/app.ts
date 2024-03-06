@@ -509,12 +509,16 @@ function showOfMagician(magicians: string[]): void {
     }
 }
 let magicianNames: string[] = ['\n' + 'Mahdi Moudini', 'Issy Simpson', 'Rahat Hossain', 'Ahmed El-Bayoumi'];
-showOfMagician(magician_names);
-
 let great_magicians: string[] = makeGreatMagician(magician_names);
+showOfMagician(magician_names);
 
 console.log("\n Magicians after adding 'the Great':");
 showOfMagician(greatMagicians);
+
+const unchangedArray = magicainNames.slice();
+const makeGreatUncahnged = makeGreatMagician(unchangedArray);
+showOfMagician(unchangedArray);
+showOfMagician(makeGreatUncahnged);
 
 // Question 44
 function makeSandwich(ingredients: string[]): string {
@@ -524,5 +528,4 @@ function makeSandwich(ingredients: string[]): string {
     let sandwich = "Your sandwich includes: " + ingredients.join(', ');
 
     return sandwich;
-
 }
