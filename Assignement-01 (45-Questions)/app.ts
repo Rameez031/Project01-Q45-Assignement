@@ -521,11 +521,11 @@ showOfMagician(unchangedArray);
 showOfMagician(makeGreatUncahnged);
 
 // Question 44
-function makeSandwich(ingredients: string[]): string {
-    if (ingredients.length === 0) {
-        return 'Your sandwich is empty. Please add some ingredients!';
+function make_sandwich(...items: string[]): void {
+    console.log('Your sandwich is empty, We have add the following ingredients to the sandwich');
+    for (let item of items) {
+        console.log(`- ${item}`);
     }
-    let sandwich = "Your sandwich includes: " + ingredients.join(', ');
-
-    return sandwich;
 }
+make_sandwich('Bread', 'Salad');
+make_sandwich('Cheese', 'Ketchup', 'Mustard');
