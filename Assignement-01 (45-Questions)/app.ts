@@ -529,3 +529,13 @@ function make_sandwich(...items: string[]): void {
 }
 make_sandwich('Bread', 'Salad');
 make_sandwich('Cheese', 'Ketchup', 'Mustard');
+
+// Question 45
+function make_car(manufacturer: string, modelNames: string, carInfo: { [key: string]: any }): { [key: string]: any } {
+    carInfo['manufacturer'] = manufacturer;
+    carInfo['model Name'] = modelNames;
+    return carInfo;
+}
+
+let tcars = make_car('Tesla', 'model x', { color: 'Black', towPackage: true });
+console.log(tcars);

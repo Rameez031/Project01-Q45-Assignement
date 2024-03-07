@@ -431,3 +431,11 @@ function make_sandwich(...items) {
 }
 make_sandwich('Bread', 'Salad');
 make_sandwich('Cheese', 'Ketchup', 'Mustard');
+// Question 45
+function make_car(manufacturer, modelNames, carInfo) {
+    carInfo['manufacturer'] = manufacturer;
+    carInfo['model Name'] = modelNames;
+    return carInfo;
+}
+let tcars = make_car('Tesla', 'model x', { color: 'Black', towPackage: true });
+console.log(tcars);
